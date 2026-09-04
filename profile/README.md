@@ -1,8 +1,7 @@
 <p align="center">
-  <img src="https://placeauth.org/assets/placeauth-sm.png" alt="PlaceAuth" width="140">
+  <img src="https://placeauth.org/assets/png/horizontal/placeauth-horizontal-light-transparent-1200x300.png" alt="PlaceAuth" width="500">
 </p>
 
-<h1 align="center">PlaceAuth</h1>
 
 <p align="center">
   <strong>A common language for machines and places.</strong>

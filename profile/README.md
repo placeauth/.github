@@ -29,3 +29,8 @@ ADMISSION PROFILE
         ▼
 AUTONOMOUS OPERATION
 
+## Contact
+
+**General inquiries:** hello@placeauth.org  
+**Standards & interoperability:** standards@placeauth.org  
+**Security:** security@placeauth.org

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://placeauth.org/assets/placeauth-mark.png" alt="PlaceAuth" width="140">
+  <img src="https://placeauth.org/assets/placeauth-sm.png" alt="PlaceAuth" width="140">
 </p>
 
 <h1 align="center">PlaceAuth</h1>

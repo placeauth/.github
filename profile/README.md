@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/placeauth-logo-github-readme.png" alt="PlaceAuth" width="500">
+  <img src="https://github.com/placeauth/.github/blob/main/profile/assets/placeauth-logo-github-readme.png" alt="PlaceAuth" width="500">
 </p>
 
 <p align="center">

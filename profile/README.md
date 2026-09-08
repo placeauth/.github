@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://placeauth.org/"><img src="https://img.shields.io/badge/Website-PlaceAuth.org-1f3b4d" alt="Website"></a>
   <a href="https://github.com/placeauth/spatial-policy-protocol/blob/main/docs/whitepaper.md"><img src="https://img.shields.io/badge/Whitepaper-From%20Permission%20to%20Admission-4b5563" alt="Whitepaper"></a>
-  <a href="https://github.com/placeauth/spatial-policy-protocol/releases/tag/v0.2.0-experimental-preview"><img src="https://img.shields.io/badge/SPP-v0.2.0%20Experimental%20Preview-6b7280" alt="SPP v0.2.0 Experimental Preview"></a>
+  <a href="https://github.com/placeauth/spatial-policy-protocol/releases/tag/v0.3.0-experimental-preview"><img src="https://img.shields.io/badge/SPP-v0.3.0%20Experimental%20Preview-6b7280" alt="SPP v0.3.0 Experimental Preview"></a>
   <a href="https://github.com/placeauth/spatial-policy-protocol/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-0f766e" alt="Apache 2.0"></a>
 </p>
 
@@ -37,11 +37,12 @@ PHYSICAL OPERATION
 
 ## Current release
 
-**[SPP v0.2.0 Experimental Preview](https://github.com/placeauth/spatial-policy-protocol/releases/tag/v0.2.0-experimental-preview)** is the current public reference implementation release.
+**[SPP v0.3.0 Experimental Preview](https://github.com/placeauth/spatial-policy-protocol/releases/tag/v0.3.0-experimental-preview)** is the current public reference implementation release.
 
-- Reference implementation: **0.2.0**
+- Reference implementation: **0.3.0**
 - Normative protocol specification: **SPP 0.1**
-- Dependency-free reference suite: **186 passed, 4 skipped**
+- Place Package: **0.1** · Explain trace: **0.1**
+- Dependency-free reference suite: **255 passed, 5 skipped**
 
 SPP remains experimental and pre-standardization. It is not an industry standard or a production safety platform.
 
@@ -49,25 +50,28 @@ SPP remains experimental and pre-standardization. It is not an industry standard
 
 - place-defined operating requirements
 - evidence-based admission, sufficiency assessment, and admission-time revalidation
-- signed evidence with local trusted-issuer verification
-- selective requalification across spatial transitions
-- embodiment-specific conformance mapping
-- deterministic decision traces with `spp-explain`
-- ROS 2/Nav2 enforcement integration
-- Open-RMF task-eligibility adapter
+- signed evidence issuers and signed place-policy authorities with distinct local Ed25519 trust roles
+- versioned requirement vocabulary, canonical units, hardened Place Package 0.1, and deterministic provider contracts
+- selective requalification and `VALID` / `REVALIDATE` / `REQUALIFY` / `INVALID` profile lifecycle assessment
+- embodiment-specific conformance mapping and independent implementation guidance
+- schema-defined deterministic decision traces with `spp-explain`
+- ROS 2/Nav2 runtime validation and live Open-RMF task-eligibility validation
+- a bounded facility-side access-control decision boundary
 
 ## Concrete validation
 
-**Nav2 runtime behavior.** SPP demonstrated an evidence-backed operating profile changing navigation speed behavior of a running Nav2 robot from **1.0 m/s → 0.5 m/s** under one active `FollowPath` goal. The bounded validation exercised ROS 2 Humble, Nav2 `ControllerServer`, and stock Regulated Pure Pursuit. It is not a physical safety validation claim.
+**Nav2 runtime behavior.** SPP demonstrated an evidence-backed operating profile changing navigation speed behavior of a running Nav2 robot from **1.0 m/s → 0.5 m/s** under one active `FollowPath` goal. The bounded validation exercised ROS 2 Humble, `nav2_msgs/msg/SpeedLimit`, Nav2 `ControllerServer`, and stock Regulated Pure Pursuit. It is not a physical safety, stopping, or certification claim.
 
-**Open-RMF adapter boundary.** Task eligibility is gated at `FleetUpdateHandle.consider_delivery_requests`. The adapter boundary was validated; no live Open-RMF runtime validation is claimed.
+**Open-RMF runtime task gating.** SPP task eligibility was validated through a live ROS 2 Humble `FleetUpdateHandle.consider_delivery_requests` path using RMF fleet adapter Python 2.1.8, a real `Adapter`, a real `FleetUpdateHandle`, one stationary registered test robot, and real delivery bids. `ADMITTED` produced a bid proposal; `DENIED` produced no proposal with `admission_denied`; `DEGRADED` was not runtime-tested. This is not a physical dispatch, traffic-negotiation, fleet-wide, or motion claim.
+
+**Facility-side decision boundary.** A generic reference adapter maps an `AdmissionProfile` to an exact-place access decision: matching-place `ADMITTED` may grant, `DEGRADED` grants only when every restriction is explicitly accepted, and denied, wrong-place, stale, revoked, or invalid profiles fail closed. It does not validate physical doors, BACnet, MQTT, vendor systems, or physical security.
 
 ## Explore
 
 | Resource | Link |
 |---|---|
 | Spatial Policy Protocol | [github.com/placeauth/spatial-policy-protocol](https://github.com/placeauth/spatial-policy-protocol) |
-| SPP v0.2 release | [SPP v0.2.0 Experimental Preview](https://github.com/placeauth/spatial-policy-protocol/releases/tag/v0.2.0-experimental-preview) |
+| SPP v0.3 release | [SPP v0.3.0 Experimental Preview](https://github.com/placeauth/spatial-policy-protocol/releases/tag/v0.3.0-experimental-preview) |
 | Whitepaper | [From Permission to Admission](https://github.com/placeauth/spatial-policy-protocol/blob/main/docs/whitepaper.md) |
 | Technical Review | [Read the technical review](https://github.com/placeauth/spatial-policy-protocol/blob/main/docs/technical-review.md) |
 | Website | [placeauth.org](https://placeauth.org/) |

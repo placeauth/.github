@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/placeauth/.github/blob/main/profile/assets/placeauth-logo-github-readme.png" alt="PlaceAuth" width="500">
+  <img src="assets/placeauth-foundation-nightly.png" alt="PlaceAuth Foundation" width="500">
 </p>
 
 <p align="center">
@@ -9,11 +9,25 @@
 <p align="center">
   <a href="https://placeauth.org/"><img src="https://img.shields.io/badge/Website-PlaceAuth.org-1f3b4d" alt="Website"></a>
   <a href="https://github.com/placeauth/spatial-policy-protocol/blob/main/docs/whitepaper.md"><img src="https://img.shields.io/badge/Whitepaper-From%20Permission%20to%20Admission-4b5563" alt="Whitepaper"></a>
-  <a href="https://github.com/placeauth/spatial-policy-protocol/releases/tag/v0.3.0-experimental-preview"><img src="https://img.shields.io/badge/SPP-v0.3.0%20Experimental%20Preview-6b7280" alt="SPP v0.3.0 Experimental Preview"></a>
+  <a href="https://github.com/placeauth/spatial-policy-protocol/releases/tag/v0.3.0-experimental-preview"><img src="https://img.shields.io/badge/Project%20Release-v0.3.0%20Experimental%20Preview-6b7280" alt="Project Release v0.3.0 Experimental Preview"></a>
   <a href="https://github.com/placeauth/spatial-policy-protocol/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-0f766e" alt="Apache 2.0"></a>
 </p>
 
 ---
+
+## PlaceAuth Foundation
+
+**PlaceAuth Foundation, Inc.** is a Florida nonprofit corporation established to steward **PlaceAuth** and the **Spatial Policy Protocol (SPP)**.
+
+The Foundation supports open protocol development, interoperability research, reference implementations, security and conformance work, technical education, public peer review, and long-term governance of the PlaceAuth ecosystem.
+
+- **PlaceAuth** is the project and public technical initiative.
+- **Spatial Policy Protocol (SPP)** is the interoperability protocol.
+- **PlaceAuth Foundation, Inc.** is the legal stewardship organization.
+
+PlaceAuth is an independent project. Experimental integrations or research involving Open-RMF, ROS 2, Nav2, or other external technologies do not imply affiliation with, endorsement by, or adoption by those projects or organizations.
+
+Formation as a Florida nonprofit corporation does not itself constitute federal recognition as a tax-exempt organization.
 
 ## Spatial Policy Protocol
 
@@ -37,7 +51,7 @@ PHYSICAL OPERATION
 
 ## Current release
 
-**[SPP v0.3.0 Experimental Preview](https://github.com/placeauth/spatial-policy-protocol/releases/tag/v0.3.0-experimental-preview)** is the current public reference implementation release.
+**[v0.3.0 Experimental Preview](https://github.com/placeauth/spatial-policy-protocol/releases/tag/v0.3.0-experimental-preview)** is the current public project and reference-implementation release.
 
 - Reference implementation: **0.3.0**
 - Normative protocol specification: **SPP 0.1**
@@ -71,14 +85,14 @@ SPP remains experimental and pre-standardization. It is not an industry standard
 | Resource | Link |
 |---|---|
 | Spatial Policy Protocol | [github.com/placeauth/spatial-policy-protocol](https://github.com/placeauth/spatial-policy-protocol) |
-| SPP v0.3 release | [SPP v0.3.0 Experimental Preview](https://github.com/placeauth/spatial-policy-protocol/releases/tag/v0.3.0-experimental-preview) |
+| Current project release | [v0.3.0 Experimental Preview](https://github.com/placeauth/spatial-policy-protocol/releases/tag/v0.3.0-experimental-preview) |
 | Whitepaper | [From Permission to Admission](https://github.com/placeauth/spatial-policy-protocol/blob/main/docs/whitepaper.md) |
-| Technical Review | [Read the technical review](https://github.com/placeauth/spatial-policy-protocol/blob/main/docs/technical-review.md) |
+| Technical Peer Review | [Review PlaceAuth / SPP](https://github.com/placeauth/spatial-policy-protocol/blob/main/docs/review/README.md) |
 | Website | [placeauth.org](https://placeauth.org/) |
 
 ## Technical feedback
 
-Critical technical feedback on protocol design, deployment assumptions, trust boundaries, interoperability, and overlapping systems is welcome through the [Technical Review](https://github.com/placeauth/spatial-policy-protocol/blob/main/docs/technical-review.md).
+Critical technical feedback on protocol design, deployment assumptions, trust boundaries, interoperability, security, and overlapping systems is welcome through the [technical peer-review entry point](https://github.com/placeauth/spatial-policy-protocol/blob/main/docs/review/README.md).
 
 ## Contact
 

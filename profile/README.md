@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/placeauth-foundation-nightly.png" alt="PlaceAuth Foundation" width="500">
+  <img src="assets/git-head-t.png" alt="PlaceAuth Foundation" width="500">
 </p>
 
 <p align="center">

@@ -1,0 +1,17 @@
+{
+  "name": "PlaceAuth Foundation",
+  "refreshed": "2026-09-25",
+  "colors": {
+    "navy": "#061625",
+    "navy2": "#0D2B42",
+    "blue": "#123D5A",
+    "cyan": "#20E6C8",
+    "sky": "#38BDF8",
+    "violet": "#A78BFA",
+    "paper": "#F8FAFC",
+    "soft": "#EEF6FB",
+    "line": "#D8E3EE",
+    "muted": "#60758A",
+    "red": "#F43F5E"
+  }
+}

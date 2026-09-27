@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" role="img" aria-labelledby="title desc">
+  <title id="title">placeauth</title>
+  <desc id="desc">Primary PlaceAuth master lockup: the approved emblem and lowercase wordmark.</desc>
+  <defs><linearGradient id="navy-plane" x1="216" y1="210" x2="808" y2="974" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0D2B42"/><stop offset="1" stop-color="#061625"/></linearGradient></defs>
+  <!-- 120 px visible emblem, 32 px optical gap, and calm medium wordmark. -->
+  <g transform="translate(-12.656 7.03) scale(.157)">
+    <path d="M208 704 512 874 816 704v40L512 974 208 744Z" fill="url(#navy-plane)"/>
+    <path d="M216 620 404 516 504 574v85l-30 17v110L216 642Z" fill="#20E6C8"/><path d="m808 620-188-104-100 58v85l30 17v110l258-144Z" fill="#38BDF8"/>
+    <path d="m404 516 108 60 108-60v124l-108 62-108-62Z" fill="#061625"/><path d="M512 596a36 36 0 1 1 0 72 36 36 0 0 1 0-72Z" fill="#0D2B42"/>
+    <path d="m512 210 296 160-140 80-108-60-48 28-60-34-96 56-140-70Z" fill="url(#navy-plane)"/>
+  </g>
+  <text x="148" y="133" fill="#061625" font-family="Inter, Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="94" font-weight="500" letter-spacing="-4.8">placeauth</text>
+</svg>

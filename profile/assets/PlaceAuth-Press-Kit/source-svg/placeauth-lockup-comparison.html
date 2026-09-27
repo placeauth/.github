@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PlaceAuth lockup system</title>
+  <style>
+    :root { --ink:#061625; --ink-2:#0D2B42; --paper:#F8FAFC; --line:#D8E3EE; --muted:#60758A; --cyan:#20E6C8; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.5 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { width:min(1100px, calc(100% - 40px)); margin:0 auto; padding:56px 0 72px; }
+    .eyebrow { margin:0 0 12px; color:#0E7490; font:700 12px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing:.12em; }
+    h1 { max-width:740px; margin:0; font-size:clamp(2.2rem, 6vw, 4.4rem); letter-spacing:-.065em; line-height:.98; }
+    .intro { max-width:660px; margin:20px 0 48px; color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:18px; }
+    .panel { border:1px solid var(--line); background:#fff; min-height:250px; padding:24px; display:flex; flex-direction:column; justify-content:space-between; }
+    .panel.dark { background:var(--ink); border-color:var(--ink-2); color:var(--paper); }
+    .panel.full { grid-column:1 / -1; min-height:220px; }
+    .label { margin:0 0 16px; color:var(--muted); font:700 11px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing:.12em; }
+    .dark .label { color:#A4D7E3; }
+    .lockup { display:block; max-width:100%; height:auto; }
+    .primary { width:min(100%, 540px); }
+    .foundation { width:min(100%, 550px); }
+    .emblem { width:126px; }
+    .stacked { width:230px; }
+    .caption { margin:20px 0 0; color:var(--muted); font-size:13px; }
+    .small-strip { display:flex; flex-wrap:wrap; align-items:center; gap:34px; margin-top:14px; }
+    .small-wrap { display:grid; gap:8px; }
+    .small-wrap span { color:var(--muted); font:700 11px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; }
+    .small-120 { width:120px; }
+    .small-160 { width:160px; }
+    .email { width:150px; }
+    .email-field { display:flex; align-items:center; min-height:86px; padding:18px; background:#fff; border:1px solid var(--line); }
+    .email-field.dark { background:var(--ink); border-color:var(--ink-2); }
+    .rule { height:1px; margin:50px 0 24px; background:var(--line); }
+    .note { margin:0; max-width:740px; color:var(--muted); font-size:14px; }
+    @media (max-width:700px) { main { width:min(100% - 28px, 1100px); padding-top:34px; } .grid { grid-template-columns:1fr; } .panel.full { grid-column:auto; } .panel { min-height:210px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">PLACEAUTH / BRAND LOCKUPS</p>
+    <h1>Quiet typography. One authoritative emblem.</h1>
+    <p class="intro">Three canonical layouts establish the system: horizontal lowercase for everyday use, emblem-only where recognition is established, and stacked for constrained or centered formats. The Foundation version is reserved for organization-level contexts.</p>
+
+    <section class="grid" aria-label="Canonical PlaceAuth lockups">
+      <article class="panel full">
+        <div><p class="label">PRIMARY MASTER / HORIZONTAL LOWERCASE</p><img class="lockup primary" src="placeauth-horizontal-lowercase.svg" alt="placeauth"></div>
+        <p class="caption">Primary master: reduced emblem scale, a 34-unit optical gap, and a restrained medium wordmark.</p>
+      </article>
+      <article class="panel dark">
+        <div><p class="label">DARK FIELD / REVERSE COLOR TREATMENT</p><img class="lockup primary" src="placeauth-horizontal-lowercase-reverse.svg" alt="placeauth"></div>
+        <p class="caption">Same canonical geometry; reverse wordmark only for dark fields.</p>
+      </article>
+      <article class="panel">
+        <div><p class="label">CANONICAL / EMBLEM ONLY</p><img class="lockup emblem" src="placeauth-emblem.svg" alt="PlaceAuth emblem"></div>
+        <p class="caption">Use when the brand is already established or the available area is very small.</p>
+      </article>
+      <article class="panel">
+        <div><p class="label">CANONICAL / STACKED</p><img class="lockup stacked" src="placeauth-stacked.svg" alt="placeauth"></div>
+        <p class="caption">For square, social, and centered applications—never a substitute for the primary lockup.</p>
+      </article>
+      <article class="panel">
+        <div><p class="label">ORGANIZATION / FOUNDATION HORIZONTAL</p><img class="lockup foundation" src="placeauth-foundation-horizontal.svg" alt="PlaceAuth Foundation"></div>
+        <p class="caption">Use “PlaceAuth Foundation” in organizational contexts. Reserve “PlaceAuth Foundation, Inc.” for legal text, not the logo.</p>
+      </article>
+    </section>
+
+    <div class="rule"></div>
+    <p class="eyebrow">SMALL-SIZE CHECK</p>
+    <section class="small-strip" aria-label="Small-size and email-signature previews">
+      <div class="small-wrap"><span>120 PX</span><img class="small-120" src="placeauth-horizontal-lowercase.svg" alt="placeauth at 120 pixels wide"></div>
+      <div class="small-wrap"><span>160 PX</span><img class="small-160" src="placeauth-horizontal-lowercase.svg" alt="placeauth at 160 pixels wide"></div>
+      <div class="small-wrap"><span>EMAIL SIGNATURE / 150 PX</span><div class="email-field"><img class="email" src="placeauth-horizontal-lowercase.svg" alt="placeauth email signature logo"></div></div>
+      <div class="small-wrap"><span>EMAIL SIGNATURE / DARK</span><div class="email-field dark"><img class="email" src="placeauth-horizontal-lowercase-reverse.svg" alt="placeauth email signature logo on dark background"></div></div>
+    </section>
+    <p class="note">Keep the primary lockup at or above 120 px wide in ordinary digital use. The emblem is the approved layered spatial-plane master from PlaceAuth-IP; only lockup scale, spacing, alignment, and wordmark treatment have been refined.</p>
+  </main>
+</body>
+</html>

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/PlaceAuth-Foundation-Press-Kit-v0.3.0/source-svg/placeauth-foundation-horizontal-paper-transparent.svg" alt="PlaceAuth Foundation" width="500">
+  <img src="assets/PlaceAuth-Press-Kit/png/horizontal/placeauth-horizontal-lowercase-paper-transparent-600x167-crop.png" alt="PlaceAuth Foundation" width="500">
 </p>
 
 <p align="center">
